@@ -3,15 +3,49 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MedeAnalytics — Design operations case study</title>
+    <title>MedeAnalytics: Design System to AI builder</title>
     <meta
       name="description"
-      content="How we organized the design system, built a component library, connected Code Connect, and shipped to npm for MedeAnalytics."
+      content="From organized Figma foundations to component libraries, Code Connect, and AI-ready delivery — the MedeAnalytics design operations program."
     />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="css/site.css" />
   </head>
   <body class="page body-m-regular">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="sprite" focusable="false">
+      <defs>
+        <symbol id="icon-layers" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M12 2 2 7l10 5 10-5-10-5Zm0 7.5L4.74 7 12 3.5 19.26 7 12 9.5Zm8.5 4.1L12 17l-8.5-3.4L2 16l10 5 10-5-1.5-.4Zm0 5L12 22l-8.5-3.4L2 21l10 5 10-5-1.5-.4Z"
+          />
+        </symbol>
+        <symbol id="icon-components" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M4 4h7v7H4V4Zm9 0h7v7h-7V4ZM4 13h7v7H4v-7Zm9 0h7v7h-7v-7Z" />
+        </symbol>
+        <symbol id="icon-connect" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M7 7a3 3 0 1 0 0 6 2.97 2.97 0 0 0 1.58-.46l2.28 2.28a3 3 0 1 0 1.42-1.42L10 11.12A3 3 0 0 0 7 7Zm0 2a1 1 0 1 1 0 2 1 1 0 0 1 0-2Zm10 5a3 3 0 0 0-2.86 2.12l-2.28-2.28a3 3 0 1 0-1.42 1.42l2.28 2.28A3 3 0 1 0 17 14Zm0 2a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"
+          />
+        </symbol>
+        <symbol id="icon-template" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M4 4h16v4H4V4Zm0 6h10v10H4V10Zm12 0h4v10h-4V10Z" />
+        </symbol>
+        <symbol id="icon-spark" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M12 2 9.2 9.2 2 12l7.2 2.8L12 22l2.8-7.2L22 12l-7.2-2.8L12 2Zm0 4.2 1.4 3.6 3.6 1.4-3.6 1.4-1.4 3.6-1.4-3.6-3.6-1.4 3.6-1.4 1.4-3.6Z"
+          />
+        </symbol>
+        <symbol id="icon-package" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M12 2 2 7v10l10 5 10-5V7L12 2Zm0 2.2 5.9 2.95L12 10.1 6.1 7.15 12 4.2ZM4 8.8l7 3.5v7.7l-7-3.5V8.8Zm16 0v7.7l-7 3.5v-7.7l7-3.5Z"
+          />
+        </symbol>
+      </defs>
+    </svg>
     <a class="skip-link label-s" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="site-header__inner">
@@ -27,82 +61,226 @@
     </header>
 
     <main id="main" class="site-main">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero__content">
-          <p class="hero__eyebrow label-m">Case study</p>
-          <h1 id="hero-title" class="h1">Design system maturity for MedeAnalytics</h1>
-          <p class="body-l-regular" style="margin-top: var(---spacing-m); color: var(--text-02-main)">
-            A structured program spanning Figma foundations, a component library, Code Connect,
-            Figma Make, agent-ready documentation, and an npm publishing pipeline.
-          </p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="foundations.html">Design foundations</a>
-            <a class="btn btn--secondary" href="library.html">Library &amp; delivery</a>
+      <section class="hero hero--featured hero--parallax" aria-labelledby="hero-title" data-parallax-root>
+        <div class="hero__bg" aria-hidden="true">
+          <div class="hero__gradient"></div>
+        </div>
+        <div class="hero__art" aria-hidden="true">
+          <svg
+            class="hero__svg"
+            viewBox="0 0 900 420"
+            preserveAspectRatio="xMidYMid meet"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g data-parallax="0.035" class="hero__layer">
+              <circle cx="120" cy="80" r="2.5" fill="var(--text-hyperlink-01-main)" opacity="0.35" />
+              <circle cx="180" cy="120" r="2" fill="var(--text-hyperlink-01-main)" opacity="0.25" />
+              <circle cx="240" cy="60" r="2" fill="var(--text-hyperlink-01-main)" opacity="0.3" />
+              <circle cx="320" cy="100" r="2.5" fill="var(--text-hyperlink-01-main)" opacity="0.28" />
+              <circle cx="400" cy="50" r="2" fill="var(--text-hyperlink-01-main)" opacity="0.22" />
+              <circle cx="520" cy="90" r="2.5" fill="var(--text-hyperlink-01-main)" opacity="0.32" />
+              <circle cx="640" cy="70" r="2" fill="var(--text-hyperlink-01-main)" opacity="0.26" />
+              <circle cx="720" cy="110" r="2.5" fill="var(--text-hyperlink-01-main)" opacity="0.3" />
+              <circle cx="800" cy="55" r="2" fill="var(--text-hyperlink-01-main)" opacity="0.24" />
+              <path
+                d="M100 280h700"
+                stroke="var(--border-06-main)"
+                stroke-width="1"
+                stroke-dasharray="4 10"
+                opacity="0.35"
+              />
+              <path
+                d="M120 300h660"
+                stroke="var(--border-04-main)"
+                stroke-width="1"
+                stroke-dasharray="2 8"
+                opacity="0.5"
+              />
+            </g>
+            <g data-parallax="0.085" class="hero__layer">
+              <path
+                d="M80 200 C200 120 320 280 440 180 S680 240 820 160"
+                fill="none"
+                stroke="var(--text-hyperlink-01-main)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                opacity="0.45"
+              />
+              <circle cx="200" cy="155" r="8" fill="none" stroke="var(--border-06-main)" stroke-width="1.5" />
+              <circle cx="440" cy="180" r="8" fill="var(--background-02-main)" stroke="var(--border-06-main)" stroke-width="1.5" />
+              <circle cx="680" cy="205" r="8" fill="none" stroke="var(--border-06-main)" stroke-width="1.5" />
+              <rect
+                x="360"
+                y="240"
+                width="56"
+                height="56"
+                rx="8"
+                fill="none"
+                stroke="var(--text-hyperlink-01-main)"
+                stroke-width="1.25"
+                opacity="0.5"
+                transform="rotate(-12 388 268)"
+              />
+              <rect
+                x="520"
+                y="220"
+                width="44"
+                height="44"
+                rx="6"
+                fill="color-mix(in srgb, var(--gradient-01-step-1) 12%, transparent)"
+                stroke="var(--border-06-main)"
+                stroke-width="1"
+                opacity="0.9"
+              />
+            </g>
+            <g data-parallax="0.14" class="hero__layer">
+              <path
+                d="M680 40h72l36 62-36 62h-72l-36-62 36-62Z"
+                fill="none"
+                stroke="var(--logo-primary)"
+                stroke-width="1.75"
+                opacity="0.85"
+              />
+              <circle cx="716" cy="102" r="10" fill="var(--duotone-theme-secondary)" opacity="0.95" />
+              <path
+                d="M716 92v20M706 102h20"
+                stroke="var(--logo-primary)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M140 320l8-22 8 22-22-16h28l-22 16Z"
+                fill="var(--logo-primary)"
+                opacity="0.45"
+              />
+              <path
+                d="M180 300l6 18 18 6-18 6-6 18-6-18-18-6 18-6 6-18Z"
+                fill="none"
+                stroke="var(--text-hyperlink-01-main)"
+                stroke-width="1.2"
+                opacity="0.7"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="hero__grid">
+          <div class="hero__content">
+            <p class="hero__eyebrow label-m">Case study</p>
+            <h1 id="hero-title" class="hero__title h1">
+              MedeAnalytics:<span class="hero__title-line"> Design System to AI builder.</span>
+            </h1>
+            <p class="hero__lede body-l-regular">
+              A structured program spanning Figma foundations, a component library, Code Connect,
+              Figma Make, agent-ready documentation, and an npm publishing pipeline.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="foundations.html">Design foundations</a>
+              <a class="btn btn--secondary" href="library.html">Library &amp; delivery</a>
+            </div>
+          </div>
+          <div class="hero__metrics" aria-hidden="true">
+            <div class="hero__metric">
+              <span class="hero__metric-value">6</span>
+              <span class="hero__metric-label label-s">delivery stages</span>
+            </div>
+            <div class="hero__metric">
+              <span class="hero__metric-value">DS</span>
+              <span class="hero__metric-label label-s">→ npm &amp; AI</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section aria-labelledby="stages-title">
-        <h2 id="stages-title" class="h2" style="margin-bottom: var(---spacing-s)">
-          Program stages
-        </h2>
-        <p class="body-m-regular" style="color: var(--text-02-main); max-width: 40rem">
-          Six workstreams that move from file hygiene to shipped packages. Follow the overview
-          cards below or jump to detailed pages.
-        </p>
+      <div class="section-divider reveal" aria-hidden="true">
+        <svg viewBox="0 0 1200 32" preserveAspectRatio="none" class="section-divider__svg">
+          <path
+            d="M0 16 Q300 4 600 16 T1200 16 L1200 32 L0 32Z"
+            fill="color-mix(in srgb, var(--border-06-main) 14%, transparent)"
+          />
+        </svg>
+      </div>
+
+      <section class="stages-section" aria-labelledby="stages-title">
+        <div class="stages-section__intro">
+          <h2 id="stages-title" class="h2">Program stages</h2>
+          <p class="body-m-regular stages-section__copy">
+            Six workstreams that move from file hygiene to shipped packages. Follow the overview
+            cards below or jump to detailed pages.
+          </p>
+        </div>
 
         <div class="card-grid">
           <a class="stage-card reveal" href="foundations.html#stage-1">
-            <span class="stage-card__num">1</span>
+            <span class="stage-card__head">
+              <span class="stage-card__icon" aria-hidden="true">
+                <svg class="stage-card__glyph"><use href="#icon-layers" /></svg>
+              </span>
+              <span class="stage-card__num">1</span>
+            </span>
             <h3 class="stage-card__title body-m-semibold">Design system organization</h3>
-            <p class="body-s-regular" style="color: var(--text-02-main); margin: 0">
-              Clean-up, structure, and a single source of truth in Figma.
-            </p>
+            <p class="body-s-regular stage-card__text">Clean-up, structure, and a single source of truth in Figma.</p>
             <span class="stage-card__meta">Open section →</span>
           </a>
 
           <a class="stage-card reveal" href="library.html#stage-2">
-            <span class="stage-card__num">2</span>
+            <span class="stage-card__head">
+              <span class="stage-card__icon" aria-hidden="true">
+                <svg class="stage-card__glyph"><use href="#icon-components" /></svg>
+              </span>
+              <span class="stage-card__num">2</span>
+            </span>
             <h3 class="stage-card__title body-m-semibold">Component library</h3>
-            <p class="body-s-regular" style="color: var(--text-02-main); margin: 0">
+            <p class="body-s-regular stage-card__text">
               Figma Make and Storybook in parallel — work in progress, already demoable.
             </p>
             <span class="stage-card__meta">Open section →</span>
           </a>
 
           <a class="stage-card reveal" href="foundations.html#stage-3">
-            <span class="stage-card__num">3</span>
+            <span class="stage-card__head">
+              <span class="stage-card__icon" aria-hidden="true">
+                <svg class="stage-card__glyph"><use href="#icon-connect" /></svg>
+              </span>
+              <span class="stage-card__num">3</span>
+            </span>
             <h3 class="stage-card__title body-m-semibold">Code Connect</h3>
-            <p class="body-s-regular" style="color: var(--text-02-main); margin: 0">
-              Bridging design system tokens and components to code.
-            </p>
+            <p class="body-s-regular stage-card__text">Bridging design system tokens and components to code.</p>
             <span class="stage-card__meta">Open section →</span>
           </a>
 
           <a class="stage-card reveal" href="foundations.html#stage-4">
-            <span class="stage-card__num">4</span>
+            <span class="stage-card__head">
+              <span class="stage-card__icon" aria-hidden="true">
+                <svg class="stage-card__glyph"><use href="#icon-template" /></svg>
+              </span>
+              <span class="stage-card__num">4</span>
+            </span>
             <h3 class="stage-card__title body-m-semibold">Figma Make template</h3>
-            <p class="body-s-regular" style="color: var(--text-02-main); margin: 0">
-              A reusable template derived from the component library.
-            </p>
+            <p class="body-s-regular stage-card__text">A reusable template derived from the component library.</p>
             <span class="stage-card__meta">Open section →</span>
           </a>
 
           <a class="stage-card reveal" href="library.html#stage-5">
-            <span class="stage-card__num">5</span>
+            <span class="stage-card__head">
+              <span class="stage-card__icon" aria-hidden="true">
+                <svg class="stage-card__glyph"><use href="#icon-spark" /></svg>
+              </span>
+              <span class="stage-card__num">5</span>
+            </span>
             <h3 class="stage-card__title body-m-semibold">Agent instructions</h3>
-            <p class="body-s-regular" style="color: var(--text-02-main); margin: 0">
-              Guidance for AI agents, versioned with the component repo.
-            </p>
+            <p class="body-s-regular stage-card__text">Guidance for AI agents, versioned with the component repo.</p>
             <span class="stage-card__meta">Open section →</span>
           </a>
 
           <a class="stage-card reveal" href="library.html#stage-6">
-            <span class="stage-card__num">6</span>
+            <span class="stage-card__head">
+              <span class="stage-card__icon" aria-hidden="true">
+                <svg class="stage-card__glyph"><use href="#icon-package" /></svg>
+              </span>
+              <span class="stage-card__num">6</span>
+            </span>
             <h3 class="stage-card__title body-m-semibold">Publish pipeline</h3>
-            <p class="body-s-regular" style="color: var(--text-02-main); margin: 0">
-              Build, test, commit, and publish to npm.
-            </p>
+            <p class="body-s-regular stage-card__text">Build, test, commit, and publish to npm.</p>
             <span class="stage-card__meta">Open section →</span>
           </a>
         </div>
