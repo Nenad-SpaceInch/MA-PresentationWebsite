@@ -1,0 +1,662 @@
+/* Elevation Styles */
+
+/* Elevation / XS */
+.elevation-xs {
+  box-shadow: var(---effectposition-zero) var(---effectposition-pos1) var(---effectscale-2xs) var(---effectposition-zero) var(--transparent-black-5);
+}
+
+/* Elevation / S */
+.elevation-s {
+  box-shadow: var(---effectposition-zero) var(---effectposition-pos1) var(---effectscale-xs) var(---effectposition-zero) var(--transparent-black-10), var(---effectposition-zero) var(---effectposition-pos1) var(---effectscale-2xs) var(---effectposition-zero) var(--transparent-black-5);
+}
+
+/* Elevation / M */
+.elevation-m {
+  box-shadow: var(---effectposition-zero) var(---effectposition-pos4) var(---effectscale-l) var(---effectposition-neg2) var(--transparent-black-5), var(---effectposition-zero) var(---effectposition-pos2) var(---effectscale-s) var(---effectposition-neg2) var(--transparent-black-5);
+}
+
+/* Elevation / L */
+.elevation-l {
+  box-shadow: var(---effectposition-zero) var(---effectposition-pos12) var(---effectscale-xl) var(---effectposition-neg4) var(--transparent-black-10), var(---effectposition-zero) var(---effectposition-pos4) var(---effectscale-m) var(---effectposition-neg2) var(--transparent-black-5);
+}
+
+/* Elevation / XL */
+.elevation-xl {
+  box-shadow: var(---effectposition-zero) var(---effectposition-pos20) var(---effectscale-2xl) var(---effectposition-neg4) var(--transparent-black-10), var(---effectposition-zero) var(---effectposition-pos8) var(---effectscale-l) var(---effectposition-neg4) var(--transparent-black-5);
+}
+
+/* Elevation / 2XL */
+.elevation-2xl {
+  box-shadow: var(---effectposition-zero) var(---effectposition-pos24) var(---effectscale-3xl) var(---effectposition-neg12) var(--transparent-black-20);
+}
+
+/* Elevation / 3XL */
+.elevation-3xl {
+  box-shadow: var(---effectposition-zero) var(---effectposition-pos32) var(---effectscale-4xl) var(---effectposition-neg12) var(--transparent-black-15);
+}
+
+/* Typography Styles */
+
+/* H1 */
+.h1 {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-xl);
+  font-style: normal;
+  font-weight: var(---fontweight-bold);
+  line-height: var(---lineheight-m);
+}
+
+/* H2 */
+.h2 {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-s);
+  font-style: normal;
+  font-weight: var(---fontweight-semibold);
+  line-height: var(---lineheight-s);
+}
+
+/* H3 */
+.h3 {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-xs);
+  font-style: normal;
+  font-weight: var(---fontweight-bold);
+  line-height: var(---lineheight-xs);
+}
+
+/* H4 */
+.h4 {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-xs);
+  font-style: normal;
+  font-weight: var(---fontweight-semibold);
+  line-height: var(---lineheight-xs);
+}
+
+/* H5 */
+.h5 {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xs);
+  font-style: normal;
+  font-weight: var(---fontweight-semibold);
+  line-height: var(---lineheight-2xs);
+}
+
+/* Body Typography Styles */
+
+/* Body / S */
+.body-s-regular {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xs);
+  font-style: normal;
+  font-weight: var(---fontweight-regular);
+  line-height: var(---lineheight-2xs);
+}
+
+.body-s-regular-hyperlink {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xs);
+  font-style: normal;
+  font-weight: var(---fontweight-regular);
+  line-height: var(---lineheight-2xs);
+  text-decoration: underline;
+}
+
+.body-s-medium {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xs);
+  font-style: normal;
+  font-weight: var(---fontweight-medium);
+  line-height: var(---lineheight-2xs);
+}
+
+.body-s-semibold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xs);
+  font-style: normal;
+  font-weight: var(---fontweight-semibold);
+  line-height: var(---lineheight-2xs);
+}
+
+.body-s-semibold-hyperlink {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xs);
+  font-style: normal;
+  font-weight: var(---fontweight-semibold);
+  line-height: var(---lineheight-2xs);
+  text-decoration: underline;
+}
+
+.body-s-bold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xs);
+  font-style: normal;
+  font-weight: var(---fontweight-bold);
+  line-height: var(---lineheight-2xs);
+}
+
+.body-s-extrabold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xs);
+  font-style: normal;
+  font-weight: var(---fontweight-extrabold);
+  line-height: var(---lineheight-2xs);
+}
+
+/* Body / M */
+.body-m-regular {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-xs);
+  font-style: normal;
+  font-weight: var(---fontweight-regular);
+  line-height: var(---lineheight-xs);
+}
+
+.body-m-regular-hyperlink {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-xs);
+  font-style: normal;
+  font-weight: var(---fontweight-regular);
+  line-height: var(---lineheight-xs);
+  text-decoration: underline;
+}
+
+.body-m-medium {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-xs);
+  font-style: normal;
+  font-weight: var(---fontweight-medium);
+  line-height: var(---lineheight-xs);
+}
+
+.body-m-semibold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-xs);
+  font-style: normal;
+  font-weight: var(---fontweight-semibold);
+  line-height: var(---lineheight-xs);
+}
+
+.body-m-semibold-hyperlink {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-xs);
+  font-style: normal;
+  font-weight: var(---fontweight-semibold);
+  line-height: var(---lineheight-xs);
+  text-decoration: underline;
+}
+
+.body-m-bold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-xs);
+  font-style: normal;
+  font-weight: var(---fontweight-bold);
+  line-height: var(---lineheight-xs);
+}
+
+.body-m-extrabold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-xs);
+  font-style: normal;
+  font-weight: var(---fontweight-extrabold);
+  line-height: var(---lineheight-xs);
+}
+
+/* Body / L */
+.body-l-regular {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-s);
+  font-style: normal;
+  font-weight: var(---fontweight-regular);
+  line-height: var(---lineheight-s);
+}
+
+.body-l-regular-hyperlink {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-s);
+  font-style: normal;
+  font-weight: var(---fontweight-regular);
+  line-height: var(---lineheight-s);
+  text-decoration: underline;
+}
+
+.body-l-medium {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-s);
+  font-style: normal;
+  font-weight: var(---fontweight-medium);
+  line-height: var(---lineheight-s);
+}
+
+.body-l-semibold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-s);
+  font-style: normal;
+  font-weight: var(---fontweight-semibold);
+  line-height: var(---lineheight-s);
+}
+
+.body-l-semibold-hyperlink {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-s);
+  font-style: normal;
+  font-weight: var(---fontweight-semibold);
+  line-height: var(---lineheight-s);
+  text-decoration: underline;
+}
+
+.body-l-bold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-s);
+  font-style: normal;
+  font-weight: var(---fontweight-bold);
+  line-height: var(---lineheight-s);
+}
+
+.body-l-extrabold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-s);
+  font-style: normal;
+  font-weight: var(---fontweight-extrabold);
+  line-height: var(---lineheight-s);
+}
+
+/* Body / XL */
+.body-xl-regular {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-l);
+  font-style: normal;
+  font-weight: var(---fontweight-regular);
+  line-height: var(---lineheight-l);
+}
+
+.body-xl-regular-hyperlink {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-l);
+  font-style: normal;
+  font-weight: var(---fontweight-regular);
+  line-height: var(---lineheight-l);
+  text-decoration: underline;
+}
+
+.body-xl-medium {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-l);
+  font-style: normal;
+  font-weight: var(---fontweight-medium);
+  line-height: var(---lineheight-l);
+}
+
+.body-xl-semibold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-l);
+  font-style: normal;
+  font-weight: var(---fontweight-semibold);
+  line-height: var(---lineheight-l);
+}
+
+.body-xl-semibold-hyperlink {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-l);
+  font-style: normal;
+  font-weight: var(---fontweight-semibold);
+  line-height: var(---lineheight-l);
+  text-decoration: underline;
+}
+
+.body-xl-bold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-l);
+  font-style: normal;
+  font-weight: var(---fontweight-bold);
+  line-height: var(---lineheight-l);
+}
+
+.body-xl-extrabold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-l);
+  font-style: normal;
+  font-weight: var(---fontweight-extrabold);
+  line-height: var(---lineheight-l);
+}
+
+/* Body / 2XL */
+.body-2xl-regular {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xl);
+  font-style: normal;
+  font-weight: var(---fontweight-regular);
+  line-height: var(---lineheight-2xl);
+}
+
+.body-2xl-regular-hyperlink {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xl);
+  font-style: normal;
+  font-weight: var(---fontweight-regular);
+  line-height: var(---lineheight-2xl);
+  text-decoration: underline;
+}
+
+.body-2xl-medium {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xl);
+  font-style: normal;
+  font-weight: var(---fontweight-medium);
+  line-height: var(---lineheight-2xl);
+}
+
+.body-2xl-semibold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xl);
+  font-style: normal;
+  font-weight: var(---fontweight-semibold);
+  line-height: var(---lineheight-2xl);
+}
+
+.body-2xl-semibold-hyperlink {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xl);
+  font-style: normal;
+  font-weight: var(---fontweight-semibold);
+  line-height: var(---lineheight-2xl);
+  text-decoration: underline;
+}
+
+.body-2xl-bold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xl);
+  font-style: normal;
+  font-weight: var(---fontweight-bold);
+  line-height: var(---lineheight-2xl);
+}
+
+.body-2xl-extrabold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xl);
+  font-style: normal;
+  font-weight: var(---fontweight-extrabold);
+  line-height: var(---lineheight-2xl);
+}
+
+/* Body / 3XL */
+.body-3xl-regular {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-3xl);
+  font-style: normal;
+  font-weight: var(---fontweight-regular);
+  line-height: var(---lineheight-3xl);
+}
+
+.body-3xl-regular-hyperlink {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-3xl);
+  font-style: normal;
+  font-weight: var(---fontweight-regular);
+  line-height: var(---lineheight-3xl);
+  text-decoration: underline;
+}
+
+.body-3xl-medium {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-3xl);
+  font-style: normal;
+  font-weight: var(---fontweight-medium);
+  line-height: var(---lineheight-3xl);
+}
+
+.body-3xl-semibold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-3xl);
+  font-style: normal;
+  font-weight: var(---fontweight-semibold);
+  line-height: var(---lineheight-3xl);
+}
+
+.body-3xl-semibold-hyperlink {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-3xl);
+  font-style: normal;
+  font-weight: var(---fontweight-semibold);
+  line-height: var(---lineheight-3xl);
+  text-decoration: underline;
+}
+
+.body-3xl-bold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-3xl);
+  font-style: normal;
+  font-weight: var(---fontweight-bold);
+  line-height: var(---lineheight-3xl);
+}
+
+.body-3xl-extrabold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-3xl);
+  font-style: normal;
+  font-weight: var(---fontweight-extrabold);
+  line-height: var(---lineheight-3xl);
+}
+
+/* Paragraph Typography Styles */
+
+/* Paragraph / S */
+.paragraph-s-regular {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-3xs);
+  font-style: normal;
+  font-weight: var(---fontweight-regular);
+  line-height: var(---lineheight-3xs);
+}
+
+.paragraph-s-regular-hyperlink {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-3xs);
+  font-style: normal;
+  font-weight: var(---fontweight-regular);
+  line-height: var(---lineheight-3xs);
+  text-decoration: underline;
+}
+
+.paragraph-s-medium {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-3xs);
+  font-style: normal;
+  font-weight: var(---fontweight-medium);
+  line-height: var(---lineheight-3xs);
+}
+
+.paragraph-s-semibold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-3xs);
+  font-style: normal;
+  font-weight: var(---fontweight-semibold);
+  line-height: var(---lineheight-3xs);
+}
+
+.paragraph-s-semibold-hyperlink {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-3xs);
+  font-style: normal;
+  font-weight: var(---fontweight-semibold);
+  line-height: var(---lineheight-3xs);
+  text-decoration: underline;
+}
+
+.paragraph-s-bold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-3xs);
+  font-style: normal;
+  font-weight: var(---fontweight-bold);
+  line-height: var(---lineheight-3xs);
+}
+
+.paragraph-s-extrabold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-3xs);
+  font-style: normal;
+  font-weight: var(---fontweight-extrabold);
+  line-height: var(---lineheight-3xs);
+}
+
+/* Paragraph / M */
+.paragraph-m-regular {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xs);
+  font-style: normal;
+  font-weight: var(---fontweight-regular);
+  line-height: var(---lineheight-2xs);
+}
+
+.paragraph-m-regular-hyperlink {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xs);
+  font-style: normal;
+  font-weight: var(---fontweight-regular);
+  line-height: var(---lineheight-2xs);
+  text-decoration: underline;
+}
+
+.paragraph-m-medium {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xs);
+  font-style: normal;
+  font-weight: var(---fontweight-medium);
+  line-height: var(---lineheight-2xs);
+}
+
+.paragraph-m-semibold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xs);
+  font-style: normal;
+  font-weight: var(---fontweight-semibold);
+  line-height: var(---lineheight-2xs);
+}
+
+.paragraph-m-semibold-hyperlink {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xs);
+  font-style: normal;
+  font-weight: var(---fontweight-semibold);
+  line-height: var(---lineheight-2xs);
+  text-decoration: underline;
+}
+
+.paragraph-m-bold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xs);
+  font-style: normal;
+  font-weight: var(---fontweight-bold);
+  line-height: var(---lineheight-2xs);
+}
+
+.paragraph-m-extrabold {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xs);
+  font-style: normal;
+  font-weight: var(---fontweight-extrabold);
+  line-height: var(---lineheight-2xs);
+}
+
+/* Label Typography Styles */
+
+/* Label / XS */
+.label-xs {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-3xs);
+  font-style: normal;
+  font-weight: var(---fontweight-medium);
+  line-height: var(---lineheight-3xs);
+}
+
+/* Label / S */
+.label-s {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-2xs);
+  font-style: normal;
+  font-weight: var(---fontweight-medium);
+  line-height: var(---lineheight-2xs);
+}
+
+/* Label / M */
+.label-m {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-xs);
+  font-style: normal;
+  font-weight: var(---fontweight-semibold);
+  line-height: var(---lineheight-2xs);
+}
+
+/* Label / L */
+.label-l {
+  font-family: var(---fontfamily);
+  font-size: var(---fontsize-s);
+  font-style: normal;
+  font-weight: var(---fontweight-semibold);
+  line-height: var(---lineheight-xs);
+}
+
+p {
+  margin: 0;
+}
+
+/* Scrollbar Styles */
+/* Old Scrollbox styles kept for reference
+.scroll-box {
+  scrollbar-color: var(--border-03-main) transparent;
+  overflow-y: scroll;
+}
+
+.scroll-box::-webkit-scrollbar:no-button {
+  width: var(---size-2xs);
+}
+
+.scroll-box::-webkit-scrollbar-button {
+  background: transparent !;
+  border: none ;
+}
+
+.scroll-box::-webkit-scrollbar-button:start {
+  background: transparent !;
+}
+
+.scroll-box::-webkit-scrollbar-button:end {
+  background: transparent !;
+}
+
+.scroll-box::-webkit-scrollbar-track:no-button{
+  background: transparent;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+  background: var(--border-03-main);
+  border-radius: var(---radius-full);
+  border: var(---spacing-2xs) solid transparent;
+  background-clip: padding-box;
+  min-height: 40px;
+} */
+
+/* Scrollbar Overlay Styles */
+.scroll-wrapper {
+  overflow: hidden;
+}
+
+/* Scrollbar Overlay Styles */
+/* Scrollbar Styles */
+.scroll-box::-webkit-scrollbar {
+  width: var(---scrollbar-width);
+}
+
+.scroll-box::-webkit-scrollbar-track {
+  background: transparent;
+  margin-top: var(---spacing-2xs);
+  margin-bottom: var(---spacing-2xs);
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+  background: var(--border-03-main);
+  border-radius: var(---radius-full);
+  border-left: var(---spacing-2xs) solid transparent;
+  border-right: var(---spacing-2xs) solid transparent;
+  background-clip: padding-box;
+}
