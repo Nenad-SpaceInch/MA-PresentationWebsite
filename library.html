@@ -216,6 +216,25 @@
             >
           </li>
         </ul>
+        <div class="section-media section-media--video reveal">
+          <div class="section-media__frame">
+            <video
+              class="section-media__video js-inline-video"
+              src="assets/stage-2-component-library.mp4"
+              loop
+              muted
+              playsinline
+              autoplay
+              preload="metadata"
+            ></video>
+            <button
+              type="button"
+              class="section-media__expand js-media-expand"
+              data-video-src="assets/stage-2-component-library.mp4"
+              aria-label="Open component library video in larger player"
+            ></button>
+          </div>
+        </div>
       </article>
 
       <article class="section-block reveal" id="stage-5">
@@ -240,6 +259,16 @@
             >
           </li>
         </ul>
+        <figure class="section-media section-media--image reveal">
+          <img
+            class="section-media__img"
+            src="assets/stage-5-agent-instructions.jpg"
+            alt="Agent instructions in the component repository"
+            width="1920"
+            height="1080"
+            loading="lazy"
+          />
+        </figure>
       </article>
 
       <article class="section-block reveal" id="stage-6">
@@ -277,12 +306,41 @@
             >
           </li>
         </ul>
+        <div class="section-media section-media--video reveal">
+          <div class="section-media__frame">
+            <video
+              class="section-media__video js-inline-video"
+              src="assets/stage-6-publish-pipeline.mp4"
+              loop
+              muted
+              playsinline
+              autoplay
+              preload="metadata"
+            ></video>
+            <button
+              type="button"
+              class="section-media__expand js-media-expand"
+              data-video-src="assets/stage-6-publish-pipeline.mp4"
+              aria-label="Open publishing pipeline video in larger player"
+            ></button>
+          </div>
+        </div>
       </article>
 
       <p class="reveal" style="margin-top: var(---spacing-2xl)">
         <a class="btn btn--secondary" href="foundations.html">Back to design foundations</a>
       </p>
     </main>
+
+    <dialog class="media-modal" id="media-modal" aria-labelledby="media-modal-title">
+      <h2 id="media-modal-title" class="visually-hidden">Video</h2>
+      <div class="media-modal__inner">
+        <div class="media-modal__panel">
+          <button type="button" class="media-modal__close" aria-label="Close video">&times;</button>
+          <video class="media-modal__video" playsinline controls loop preload="metadata"></video>
+        </div>
+      </div>
+    </dialog>
 
     <footer class="site-footer">
       <div class="site-footer__inner body-s-regular">
