@@ -221,7 +221,7 @@
           </p>
         </div>
 
-        <!-- Media assets (16:9): stage-1-design-system.jpg … stage-6-publish-pipeline.jpg; videos: stage-2-component-library.mp4, stage-6-publish-pipeline.mp4 -->
+        <!-- Media: design-system.png, code-connect.png, agent-instructions.png; videos: storybook.mp4, template.mp4, publish-pipeline.mp4 -->
         <div class="card-grid">
           <article class="stage-card reveal">
             <a class="stage-card__link" href="foundations.html#stage-1">
@@ -238,7 +238,7 @@
             <div class="stage-card__media">
               <img
                 class="stage-card__media-img"
-                src="assets/stage-1-design-system.jpg"
+                src="assets/design-system.png"
                 alt=""
                 width="1920"
                 height="1080"
@@ -262,18 +262,18 @@
               <span class="stage-card__meta">Open section →</span>
             </a>
             <div class="stage-card__media stage-card__media--video">
-              <img
-                class="stage-card__media-img"
-                src="assets/stage-2-component-library.jpg"
-                alt=""
-                width="1920"
-                height="1080"
-                loading="lazy"
-              />
+              <video
+                class="stage-card__media-img stage-card__media-preview"
+                src="assets/storybook.mp4"
+                muted
+                playsinline
+                preload="metadata"
+                aria-hidden="true"
+              ></video>
               <button
                 type="button"
                 class="stage-card__play js-media-open"
-                data-video-src="assets/stage-2-component-library.mp4"
+                data-video-src="assets/storybook.mp4"
                 aria-label="Play component library video"
               >
                 <span class="stage-card__play-icon" aria-hidden="true">
@@ -300,7 +300,7 @@
             <div class="stage-card__media">
               <img
                 class="stage-card__media-img"
-                src="assets/stage-3-code-connect.jpg"
+                src="assets/code-connect.png"
                 alt=""
                 width="1920"
                 height="1080"
@@ -321,15 +321,27 @@
               <p class="body-s-regular stage-card__text">A reusable template derived from the component library.</p>
               <span class="stage-card__meta">Open section →</span>
             </a>
-            <div class="stage-card__media">
-              <img
-                class="stage-card__media-img"
-                src="assets/stage-4-figma-template.jpg"
-                alt=""
-                width="1920"
-                height="1080"
-                loading="lazy"
-              />
+            <div class="stage-card__media stage-card__media--video">
+              <video
+                class="stage-card__media-img stage-card__media-preview"
+                src="assets/template.mp4"
+                muted
+                playsinline
+                preload="metadata"
+                aria-hidden="true"
+              ></video>
+              <button
+                type="button"
+                class="stage-card__play js-media-open"
+                data-video-src="assets/template.mp4"
+                aria-label="Play Figma Make template video"
+              >
+                <span class="stage-card__play-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7L8 5z" />
+                  </svg>
+                </span>
+              </button>
             </div>
           </article>
 
@@ -348,7 +360,7 @@
             <div class="stage-card__media">
               <img
                 class="stage-card__media-img"
-                src="assets/stage-5-agent-instructions.jpg"
+                src="assets/agent-instructions.png"
                 alt=""
                 width="1920"
                 height="1080"
@@ -370,18 +382,18 @@
               <span class="stage-card__meta">Open section →</span>
             </a>
             <div class="stage-card__media stage-card__media--video">
-              <img
-                class="stage-card__media-img"
-                src="assets/stage-6-publish-pipeline.jpg"
-                alt=""
-                width="1920"
-                height="1080"
-                loading="lazy"
-              />
+              <video
+                class="stage-card__media-img stage-card__media-preview"
+                src="assets/publish-pipeline.mp4"
+                muted
+                playsinline
+                preload="metadata"
+                aria-hidden="true"
+              ></video>
               <button
                 type="button"
                 class="stage-card__play js-media-open"
-                data-video-src="assets/stage-6-publish-pipeline.mp4"
+                data-video-src="assets/publish-pipeline.mp4"
                 aria-label="Play publishing pipeline video"
               >
                 <span class="stage-card__play-icon" aria-hidden="true">

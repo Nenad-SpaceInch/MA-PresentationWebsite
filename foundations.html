@@ -210,7 +210,7 @@
         <figure class="section-media section-media--image reveal">
           <img
             class="section-media__img"
-            src="assets/stage-1-design-system.jpg"
+            src="assets/design-system.png"
             alt="MedeAnalytics design system organized in Figma"
             width="1920"
             height="1080"
@@ -245,7 +245,7 @@
         <figure class="section-media section-media--image reveal">
           <img
             class="section-media__img"
-            src="assets/stage-3-code-connect.jpg"
+            src="assets/code-connect.png"
             alt="Code Connect mapping between Figma and the component library"
             width="1920"
             height="1080"
@@ -275,22 +275,41 @@
             >
           </li>
         </ul>
-        <figure class="section-media section-media--image reveal">
-          <img
-            class="section-media__img"
-            src="assets/stage-4-figma-template.jpg"
-            alt="Figma Make rapid prototyping template"
-            width="1920"
-            height="1080"
-            loading="lazy"
-          />
-        </figure>
+        <div class="section-media section-media--video reveal">
+          <div class="section-media__frame">
+            <video
+              class="section-media__video js-inline-video"
+              src="assets/template.mp4"
+              loop
+              muted
+              playsinline
+              autoplay
+              preload="metadata"
+            ></video>
+            <button
+              type="button"
+              class="section-media__expand js-media-expand"
+              data-video-src="assets/template.mp4"
+              aria-label="Open Figma Make template video in larger player"
+            ></button>
+          </div>
+        </div>
       </article>
 
       <p class="reveal" style="margin-top: var(---spacing-2xl)">
         <a class="btn btn--secondary" href="library.html">Continue to library &amp; delivery</a>
       </p>
     </main>
+
+    <dialog class="media-modal" id="media-modal" aria-labelledby="media-modal-title">
+      <h2 id="media-modal-title" class="visually-hidden">Video</h2>
+      <div class="media-modal__inner">
+        <div class="media-modal__panel">
+          <button type="button" class="media-modal__close" aria-label="Close video">&times;</button>
+          <video class="media-modal__video" playsinline controls loop preload="metadata"></video>
+        </div>
+      </div>
+    </dialog>
 
     <footer class="site-footer">
       <div class="site-footer__inner body-s-regular">

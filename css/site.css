@@ -629,7 +629,8 @@ body {
   background: var(--background-09-main);
 }
 
-.stage-card__media-img {
+.stage-card__media-img,
+video.stage-card__media-img {
   display: block;
   width: 100%;
   height: 100%;
