@@ -55,7 +55,7 @@
     progress = Math.max(0, Math.min(1, progress));
 
     layers.forEach(function (layer) {
-      var speed = parseFloat(layer.getAttribute("data-parallax"), 10) || 0;
+      var speed = parseFloat(layer.getAttribute("data-parallax")) || 0;
       var offset = (progress - 0.35) * 90 * speed;
       layer.style.transform = "translate3d(0, " + offset.toFixed(2) + "px, 0)";
     });
