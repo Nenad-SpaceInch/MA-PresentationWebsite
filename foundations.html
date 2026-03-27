@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Design foundations — MedeAnalytics case study</title>
+    <meta
+      name="description"
+      content="Design system organization, Code Connect, and Figma Make template for MedeAnalytics."
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="css/site.css" />
+  </head>
+  <body class="page body-m-regular">
+    <a class="skip-link label-s" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-logo" href="index.html">
+          <img src="assets/ma_logo.svg" alt="MedeAnalytics" width="216" height="31" />
+        </a>
+        <nav class="site-nav label-s" aria-label="Primary">
+          <a href="index.html">Overview</a>
+          <a href="foundations.html" aria-current="page">Design foundations</a>
+          <a href="library.html">Library &amp; delivery</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="site-main site-main--tall">
+      <div class="page-intro reveal">
+        <h1 class="h1">Design foundations</h1>
+        <p class="body-l-regular" style="margin-top: var(---spacing-m); color: var(--text-02-main)">
+          Figma file structure, design–code mapping, and reusable Make templates — the layer
+          that keeps product and engineering aligned.
+        </p>
+      </div>
+
+      <article class="section-block reveal" id="stage-1">
+        <div class="section-block__header">
+          <span class="section-block__num" aria-hidden="true">1</span>
+          <h2 class="h2">Design system clean-up &amp; organization</h2>
+          <span class="tag">Figma</span>
+        </div>
+        <p class="body-m-regular" style="color: var(--text-02-main); max-width: 48rem">
+          We audited and reorganized the MedeAnalytics design system file so teams can find
+          patterns, tokens, and documentation without friction. The file is structured for dev-mode
+          handoff and ongoing maintenance.
+        </p>
+        <ul class="link-list body-m-regular">
+          <li>
+            <a
+              class="external-link body-m-semibold"
+              href="https://www.figma.com/design/BknZbt1r8fDs9t1OQzNP9z/%E2%9D%96-MedeAnalytics---Design-System?node-id=33199-4739&p=f&m=dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              >MedeAnalytics — Design System (Figma)</a
+            >
+          </li>
+        </ul>
+      </article>
+
+      <article class="section-block reveal" id="stage-3">
+        <div class="section-block__header">
+          <span class="section-block__num" aria-hidden="true">3</span>
+          <h2 class="h2">Code Connect</h2>
+          <span class="tag tag--progress">In progress</span>
+        </div>
+        <p class="body-m-regular" style="color: var(--text-02-main); max-width: 48rem">
+          We began connecting the design system to the component library so designers and
+          developers share one mapping story — from Figma components to Storybook and
+          published packages.
+        </p>
+        <ul class="link-list body-m-regular">
+          <li>
+            <a
+              class="external-link body-m-semibold"
+              href="https://github.com/Nenad-SpaceInch/MA-ComponentLibrary"
+              target="_blank"
+              rel="noopener noreferrer"
+              >MA-ComponentLibrary (GitHub)</a
+            >
+            — Code Connect configuration lives alongside the library.
+          </li>
+        </ul>
+      </article>
+
+      <article class="section-block reveal" id="stage-4">
+        <div class="section-block__header">
+          <span class="section-block__num" aria-hidden="true">4</span>
+          <h2 class="h2">Figma Make template</h2>
+          <span class="tag">Template</span>
+        </div>
+        <p class="body-m-regular" style="color: var(--text-02-main); max-width: 48rem">
+          We packaged the component library into a Figma Make template so new explorations start
+          from the same building blocks and visual language as production.
+        </p>
+        <ul class="link-list body-m-regular">
+          <li>
+            <a
+              class="external-link body-m-semibold"
+              href="https://www.figma.com/make/ufbO5gq6Rf03ZI346LKv62/MedeAnalytics---Component-Library?t=pz5c3cGEGmABuTN2-1&preview-route=%2Ftag"
+              target="_blank"
+              rel="noopener noreferrer"
+              >MedeAnalytics — Component Library (Figma Make)</a
+            >
+          </li>
+        </ul>
+      </article>
+
+      <p class="reveal" style="margin-top: var(---spacing-2xl)">
+        <a class="btn btn--secondary" href="library.html">Continue to library &amp; delivery</a>
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner body-s-regular">
+        <p class="label-s" style="margin: 0">
+          <a href="index.html">Overview</a>
+          · MedeAnalytics design operations
+        </p>
+      </div>
+    </footer>
+    <script src="js/site.js" defer></script>
+  </body>
+</html>

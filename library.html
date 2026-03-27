@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Library &amp; delivery — MedeAnalytics case study</title>
+    <meta
+      name="description"
+      content="Component library with Storybook, agent instructions, and npm publishing for MedeAnalytics."
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="css/site.css" />
+  </head>
+  <body class="page body-m-regular">
+    <a class="skip-link label-s" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-logo" href="index.html">
+          <img src="assets/ma_logo.svg" alt="MedeAnalytics" width="216" height="31" />
+        </a>
+        <nav class="site-nav label-s" aria-label="Primary">
+          <a href="index.html">Overview</a>
+          <a href="foundations.html">Design foundations</a>
+          <a href="library.html" aria-current="page">Library &amp; delivery</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="site-main site-main--tall">
+      <div class="page-intro reveal">
+        <h1 class="h1">Library &amp; delivery</h1>
+        <p class="body-l-regular" style="margin-top: var(---spacing-m); color: var(--text-02-main)">
+          Building in the open with Figma Make and Storybook, documenting for humans and agents,
+          and shipping releases to npm.
+        </p>
+      </div>
+
+      <article class="section-block reveal" id="stage-2">
+        <div class="section-block__header">
+          <span class="section-block__num" aria-hidden="true">2</span>
+          <h2 class="h2">Component library</h2>
+          <span class="tag tag--progress">In progress</span>
+        </div>
+        <p class="body-m-regular" style="color: var(--text-02-main); max-width: 48rem">
+          Components are authored in Figma Make alongside a Storybook implementation. The
+          parallel tracks let design and engineering validate the same API surface before
+          wider adoption.
+        </p>
+        <ul class="link-list body-m-regular">
+          <li>
+            <a
+              class="external-link body-m-semibold"
+              href="https://www.figma.com/make/ufbO5gq6Rf03ZI346LKv62/MedeAnalytics---Component-Library?t=pz5c3cGEGmABuTN2-1&preview-route=%2Ftag"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Figma Make — Component Library</a
+            >
+          </li>
+          <li>
+            <a
+              class="external-link body-m-semibold"
+              href="https://github.com/Nenad-SpaceInch/MA-ComponentLibrary"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub — MA-ComponentLibrary</a
+            >
+          </li>
+        </ul>
+      </article>
+
+      <article class="section-block reveal" id="stage-5">
+        <div class="section-block__header">
+          <span class="section-block__num" aria-hidden="true">5</span>
+          <h2 class="h2">Instructions for agents</h2>
+          <span class="tag">Repo</span>
+        </div>
+        <p class="body-m-regular" style="color: var(--text-02-main); max-width: 48rem">
+          We added an <strong class="body-m-semibold">instructions</strong> folder in the
+          component repository so coding agents and contributors follow the same conventions,
+          constraints, and review expectations.
+        </p>
+        <ul class="link-list body-m-regular">
+          <li>
+            <a
+              class="external-link body-m-semibold"
+              href="https://github.com/Nenad-SpaceInch/MA-ComponentLibrary/tree/main/instructions"
+              target="_blank"
+              rel="noopener noreferrer"
+              >instructions/ on GitHub</a
+            >
+          </li>
+        </ul>
+      </article>
+
+      <article class="section-block reveal" id="stage-6">
+        <div class="section-block__header">
+          <span class="section-block__num" aria-hidden="true">6</span>
+          <h2 class="h2">Publishing pipeline</h2>
+          <span class="tag">npm</span>
+        </div>
+        <p class="body-m-regular" style="color: var(--text-02-main); max-width: 48rem">
+          CI builds, tests, and publishes the library so consumers can depend on a stable
+          semver story. Install the package in your application toolchain:
+        </p>
+        <p
+          class="body-m-semibold reveal"
+          style="
+            margin-top: var(---spacing-m);
+            padding: var(---spacing-m) var(---spacing-l);
+            background: var(--background-03-main);
+            border-radius: var(---radius-m);
+            border: 1px solid var(--border-04-main);
+            font-family: ui-monospace, monospace;
+            font-size: var(---fontsize-2xs);
+          "
+        >
+          npm install @nenad-spaceinch/component-library
+        </p>
+        <ul class="link-list body-m-regular">
+          <li>
+            <a
+              class="external-link body-m-semibold"
+              href="https://github.com/Nenad-SpaceInch/MA-ComponentLibrary"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Pipeline &amp; releases — MA-ComponentLibrary</a
+            >
+          </li>
+        </ul>
+      </article>
+
+      <p class="reveal" style="margin-top: var(---spacing-2xl)">
+        <a class="btn btn--secondary" href="foundations.html">Back to design foundations</a>
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner body-s-regular">
+        <p class="label-s" style="margin: 0">
+          <a href="index.html">Overview</a>
+          · MedeAnalytics design operations
+        </p>
+      </div>
+    </footer>
+    <script src="js/site.js" defer></script>
+  </body>
+</html>

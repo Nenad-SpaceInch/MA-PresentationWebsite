@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MedeAnalytics — Design operations case study</title>
+    <meta
+      name="description"
+      content="How we organized the design system, built a component library, connected Code Connect, and shipped to npm for MedeAnalytics."
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="css/site.css" />
+  </head>
+  <body class="page body-m-regular">
+    <a class="skip-link label-s" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-logo" href="index.html">
+          <img src="assets/ma_logo.svg" alt="MedeAnalytics" width="216" height="31" />
+        </a>
+        <nav class="site-nav label-s" aria-label="Primary">
+          <a href="index.html" aria-current="page">Overview</a>
+          <a href="foundations.html">Design foundations</a>
+          <a href="library.html">Library &amp; delivery</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="site-main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <p class="hero__eyebrow label-m">Case study</p>
+          <h1 id="hero-title" class="h1">Design system maturity for MedeAnalytics</h1>
+          <p class="body-l-regular" style="margin-top: var(---spacing-m); color: var(--text-02-main)">
+            A structured program spanning Figma foundations, a component library, Code Connect,
+            Figma Make, agent-ready documentation, and an npm publishing pipeline.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="foundations.html">Design foundations</a>
+            <a class="btn btn--secondary" href="library.html">Library &amp; delivery</a>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="stages-title">
+        <h2 id="stages-title" class="h2" style="margin-bottom: var(---spacing-s)">
+          Program stages
+        </h2>
+        <p class="body-m-regular" style="color: var(--text-02-main); max-width: 40rem">
+          Six workstreams that move from file hygiene to shipped packages. Follow the overview
+          cards below or jump to detailed pages.
+        </p>
+
+        <div class="card-grid">
+          <a class="stage-card reveal" href="foundations.html#stage-1">
+            <span class="stage-card__num">1</span>
+            <h3 class="stage-card__title body-m-semibold">Design system organization</h3>
+            <p class="body-s-regular" style="color: var(--text-02-main); margin: 0">
+              Clean-up, structure, and a single source of truth in Figma.
+            </p>
+            <span class="stage-card__meta">Open section →</span>
+          </a>
+
+          <a class="stage-card reveal" href="library.html#stage-2">
+            <span class="stage-card__num">2</span>
+            <h3 class="stage-card__title body-m-semibold">Component library</h3>
+            <p class="body-s-regular" style="color: var(--text-02-main); margin: 0">
+              Figma Make and Storybook in parallel — work in progress, already demoable.
+            </p>
+            <span class="stage-card__meta">Open section →</span>
+          </a>
+
+          <a class="stage-card reveal" href="foundations.html#stage-3">
+            <span class="stage-card__num">3</span>
+            <h3 class="stage-card__title body-m-semibold">Code Connect</h3>
+            <p class="body-s-regular" style="color: var(--text-02-main); margin: 0">
+              Bridging design system tokens and components to code.
+            </p>
+            <span class="stage-card__meta">Open section →</span>
+          </a>
+
+          <a class="stage-card reveal" href="foundations.html#stage-4">
+            <span class="stage-card__num">4</span>
+            <h3 class="stage-card__title body-m-semibold">Figma Make template</h3>
+            <p class="body-s-regular" style="color: var(--text-02-main); margin: 0">
+              A reusable template derived from the component library.
+            </p>
+            <span class="stage-card__meta">Open section →</span>
+          </a>
+
+          <a class="stage-card reveal" href="library.html#stage-5">
+            <span class="stage-card__num">5</span>
+            <h3 class="stage-card__title body-m-semibold">Agent instructions</h3>
+            <p class="body-s-regular" style="color: var(--text-02-main); margin: 0">
+              Guidance for AI agents, versioned with the component repo.
+            </p>
+            <span class="stage-card__meta">Open section →</span>
+          </a>
+
+          <a class="stage-card reveal" href="library.html#stage-6">
+            <span class="stage-card__num">6</span>
+            <h3 class="stage-card__title body-m-semibold">Publish pipeline</h3>
+            <p class="body-s-regular" style="color: var(--text-02-main); margin: 0">
+              Build, test, commit, and publish to npm.
+            </p>
+            <span class="stage-card__meta">Open section →</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner body-s-regular">
+        <p class="label-s" style="margin: 0">
+          MedeAnalytics design operations — internal case study showcase.
+        </p>
+      </div>
+    </footer>
+    <script src="js/site.js" defer></script>
+  </body>
+</html>
