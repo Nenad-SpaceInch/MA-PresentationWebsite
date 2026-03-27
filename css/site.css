@@ -770,8 +770,8 @@ video.stage-card__media-img {
 }
 
 .page--detail .section-media {
-  max-width: 960px;
-  margin: var(---spacing-xl) auto 0;
+  max-width: 640px;
+  margin: var(---spacing-xl) 0 0;
 }
 
 figure.section-media {
