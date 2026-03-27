@@ -170,6 +170,15 @@ body {
   padding: 0;
 }
 
+/* Inner pages: slightly shorter hero than home */
+.hero--sub {
+  min-height: clamp(18rem, 44vh, 32rem);
+}
+
+.hero--sub .hero__grid {
+  min-height: clamp(18rem, 44vh, 32rem);
+}
+
 .hero__bg {
   position: absolute;
   inset: 0;
