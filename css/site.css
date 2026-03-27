@@ -769,10 +769,16 @@ video.stage-card__media-img {
   background: var(--background-09-main);
 }
 
+.page--detail .section-media {
+  max-width: 960px;
+  margin: var(---spacing-xl) auto 0;
+}
+
 figure.section-media {
   margin-left: 0;
   margin-right: 0;
 }
+
 
 .section-media--video {
   position: relative;
