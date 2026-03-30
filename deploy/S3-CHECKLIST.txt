@@ -1,0 +1,48 @@
+S3 + CloudFront: fixing 404s on CSS, JS, and /assets
+=====================================================
+
+The HTML uses root-relative URLs (e.g. /styles/index.css). For those to resolve,
+objects must exist at the SAME path inside the bucket, at the origin root that
+CloudFront uses.
+
+After upload, these keys must exist (examples):
+
+  index.html
+  foundations.html
+  library.html
+  styles/index.css
+  styles/grape-crush.css
+  (and other files under styles/ that index.css imports)
+  css/site.css
+  js/site.js
+  assets/ma_logo.svg
+  assets/design-system.png
+  assets/code-connect.png
+  assets/agent-instructions.png
+  assets/storybook.mp4
+  assets/template.mp4
+  assets/publish-pipeline.mp4
+
+Common mistakes
+---------------
+
+1. Uploading a ZIP so the site lives under a folder prefix, e.g.
+   s3://bucket/MA-PresentationWebsite/styles/index.css
+   while the browser requests /styles/index.css -> 404.
+
+   Fix: Sync the CONTENTS of the project folder to the bucket root (or set
+   CloudFront origin path to match your prefix).
+
+2. CloudFront "Origin path" set to a subpath that does not match where files
+   were uploaded. Fix: Clear origin path or upload under that prefix.
+
+3. Stale 404 cache: invalidate /* on the distribution after uploading.
+
+4. Only HTML uploaded: css/, js/, styles/, assets/ must be uploaded too.
+
+Quick verify (replace bucket and region):
+  aws s3 ls s3://YOUR-BUCKET/styles/
+  aws s3 ls s3://YOUR-BUCKET/assets/
+
+Local sync (from repo root, with AWS CLI):
+  .\deploy\s3-upload.ps1 -BucketName YOUR-BUCKET -CloudFrontDistributionId YOUR_DIST_ID
