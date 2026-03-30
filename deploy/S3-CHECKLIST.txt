@@ -1,8 +1,13 @@
 S3 + CloudFront: fixing 404s on CSS, JS, and /assets
 =====================================================
 
-The HTML uses root-relative URLs (e.g. /styles/index.css). For those to resolve,
-objects must exist at the SAME path inside the bucket, at the origin root that
+Production site: https://mede-ds.spaceinch.tech/
+
+The HTML uses relative URLs (e.g. styles/index.css) so opening pages from disk
+(file://) works. On HTTPS, the browser still resolves them against the site root
+when pages live at the bucket root (e.g. /foundations.html -> /styles/...).
+
+Objects must exist at the SAME path inside the bucket, at the origin root that
 CloudFront uses.
 
 After upload, these keys must exist (examples):
